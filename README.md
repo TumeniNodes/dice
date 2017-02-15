@@ -1,0 +1,2 @@
+# dice
+Make up some dice game to play with others in Minetest.
