@@ -1,3 +1,0 @@
-textures CC0 : https://creativecommons.org/choose/zero/
-
-Everything else GPLv3 : https://www.gnu.org/licenses/gpl-3.0.html
