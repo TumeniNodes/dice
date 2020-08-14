@@ -1,5 +1,9 @@
 -- not_wuzzy_dice by TumeniNodes 2/14/2017 (CC0)
 
+if minetest.get_modpath("mcl_sounds") then
+    default=mcl_sounds   
+end
+
 minetest.register_node("not_wuzzy_dice:dice", {
 	description = "Not Wuzzy Dice",
 	tiles = {"not_wuzzy_dice.png"},
@@ -23,4 +27,15 @@ for i = 1, 6 do
 		groups = {cracky = 3, stone = 1, not_in_creative_inventory = 1},
 		sounds = default.node_sound_stone_defaults()
 })
+end
+
+if minetest.get_modpath("mcl_core") then
+	minetest.register_craft({
+		output = "not_wuzzy_dice:dice",
+		recipe = {
+			{"group:wool", "group:wool","group:wool"},
+			{"group:wool", "mcl_core:paper","group:wool"},
+			{"group:wool", "group:wool","group:wool"}
+		 },
+	})
 end
